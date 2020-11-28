@@ -5,14 +5,20 @@ const list=document.querySelector('ul');
 window.onload=()=>init();
 
 function init(){
-    document.querySelector('#btn-add').onclick=()=>{
-        newitem(txt.value);
-        clearInput();
+    document.querySelector('#btn-add').onclick=()=> newText();
+    document.querySelector('#text').onkeyup=(event)=>{
+        if(event.keyCode==13)
+            newText(); 
     };
     txt.focus();
 }
 
-function newitem(t){
+function newText(){
+    txt.value ? addItem(txt.value) : null;
+    clearInput();
+}
+
+function addItem(t){
     const nli = document.querySelector('#newitem').content.cloneNode(true);
     nli.querySelector('span').textContent=t;
     nli.querySelector('.delete').onclick=(res)=> deleteItem(res.target);
