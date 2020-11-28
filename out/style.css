@@ -1,0 +1,80 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  background-color: yellowgreen;
+  max-height: 90%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  margin: 40px;
+}
+.main .main2 {
+  margin-top: 30px;
+  padding: 10px 10px;
+  border: 3px solid white;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+.wrapper input, .wrapper div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+.wrapper div {
+  margin: 5px 0px;
+}
+.wrapper input {
+  padding: 5px 10px;
+}
+.wrapper input[type=text] {
+  flex-grow: 1;
+  display: flex;
+  background-color: yellow;
+  min-width: 200px;
+}
+@media screen and (min-width: 900px) {
+  .wrapper input[type=text] {
+    margin-right: auto;
+  }
+}
+.wrapper input[type=button] {
+  background-color: orange;
+  max-width: 100px;
+}
+
+.lista {
+  display: flex;
+  max-height: 300px;
+  min-height: 300px;
+  border: 2px solid white;
+  background-color: transparent;
+  overflow-y: auto;
+  padding: 10px;
+}
+.lista li {
+  display: flex;
+  align-content: center;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+.lista li .delete {
+  margin-left: 10px;
+  background-color: orange;
+  padding: 0px 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

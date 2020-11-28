@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+
+    <link rel="stylesheet" href="out/style.css">
+</head>
+<body>
+    
+    <template id="newitem">
+        <li>
+            <span></span>
+            <input class="delete" type="button" value=&times>
+        </li>
+    </template>
+    
+    <div class="main">
+        <h2>My Shopping List</h2>
+
+        <div class="main2">
+            
+            <div class="wrapper">
+                <div>Enter a new item:</div>
+                <input id="text" type="text">
+                <input id="btn-add" type="button" value="Add item">
+            </div>
+            
+            <div class="lista">
+                <ul></ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+    <script src="src/js/main.js"></script>
+</html>
